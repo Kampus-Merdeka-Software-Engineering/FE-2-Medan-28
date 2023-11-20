@@ -18,6 +18,7 @@ header{
   width: 100%;
   left: 0;
   top: 0;
+  margin: -2rem 0rem -2rem 0rem;
 }
 
 header .header-content{
@@ -229,10 +230,16 @@ footer .sub-footer table td{
 
 footer .sub-footer table .socmed img{
   max-width: 2.5rem;
-    max-height: 2.5rem;
-    display: block;
-    margin-left: 1rem;
-    margin-right: 1rem;
+  max-height: 2.5rem;
+  display: block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+footer .sub-footer table .socmed img:hover{
+  opacity: 0.5;
+  border-width: 1px;
+  transition: all 0.5s;
 }
 
 footer .main-footer{
