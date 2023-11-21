@@ -20,7 +20,8 @@
         
     </header>
     <nav id="nav">
-        <div class="navbar">
+        <div class="navbar" id="resNavbar">
+            <a class="mini-title" href="./">Revo Youth News</a>
             <a href="./">Home</a>
             <a href="#main">News</a>
             <div class="dropdown">
@@ -32,16 +33,17 @@
                 <a href="#">Sub Kategori 2</a>
                 <a href="#">Sub Kategori 3</a>
               </div>
-            </div>
-            <a href="#footer">About Us</a>
+            </div> 
+            <a href="#about">About Us</a>
             <div class="search-container">
                 <form action="./action_page.php">
                   <input type="text" placeholder="Search.." name="search">
                 </form>
-              </div> 
+            </div>
+            <a href="javascript:void(0);" style="font-size:0.938rem;" class="icon" onclick="resNav()">&#9776;</a>
           </div>
     </nav>
-    <main id="main">
+    <main id="main" class="main">
 
     </main>
     <footer id="footer">
@@ -70,6 +72,4 @@
     </footer>
 </body>
 </html>
-<!-- <script>
-    let search = document.getElementsByClassName
-</script> -->
+<script src="script.js"></script>
