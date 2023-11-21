@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News1</title>
+    <title>RevoYouth News</title>
+    <link rel = "icon" href="./images/title.png" type = "image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Jomhuria' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
+    <header id="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="./"><img src="./images/logo.png"></a>
+            </div>
+        </div>
+        
+    </header>
+    <nav id="nav">
+        <div class="navbar" id="resNavbar">
+            <a class="mini-title" href="./">Revo Youth News</a>
+            <a href="./">Home</a>
+            <a href="#main">News</a>
+            <div class="dropdown">
+              <button class="dropbtn">Kategori 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Sub Kategori 1</a>
+                <a href="#">Sub Kategori 2</a>
+                <a href="#">Sub Kategori 3</a>
+              </div>
+            </div> 
+            <a href="#about">About Us</a>
+            <div class="search-container">
+                <form action="./action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+            <a href="javascript:void(0);" style="font-size:0.938rem;" class="icon" onclick="resNav()">&#9776;</a>
+          </div>
+    </nav>
+    <main id="main" class="main">
+
+    </main>
+    <footer id="footer">
+        <div class="sub-footer">
+            <div class="logo">
+                <a href="./"><img src="./images/logo.png"></a>
+            </div>
+            <table>
+                <td class="socmed">
+                    <a target="_blank" href="https://www.whatsapp.com"><img src="./images/socmed/whatsapp.png"></a>
+                </td>
+                <td class="socmed">
+                    <a target="_blank" href="https://www.instagram.com"><img src="./images/socmed/instagram.png"></a>
+                </td>
+                <td class="socmed">
+                    <a target="_blank" href="https://www.youtube.com"><img src="./images/socmed/youtube.png"></a>
+                </td>
+                <td class="socmed">
+                    <a target="_blank" href="https://www.twitter.com"><img src="./images/socmed/twitter.png"></a>
+                </td>
+            </table>
+        </div>
+        <div class="main-footer">
+            <p>RevoYouth News &copy; Copyright 2023. | All Rights Reserved</p>
+        </div>     
+    </footer>
 </body>
 </html>
+<script src="script.js"></script>
