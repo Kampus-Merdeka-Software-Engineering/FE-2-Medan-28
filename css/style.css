@@ -1,10 +1,10 @@
 /* Structure CSS */
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
-  background-image: url('../images/bg.webp');
+body {
+  background-image: url("../images/bg.webp");
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -12,8 +12,8 @@ body{
 }
 
 /* Header CSS */
-header{
-  background:#007a8b;
+header {
+  background: #007a8b;
   position: relative;
   width: 100%;
   left: 0;
@@ -21,32 +21,32 @@ header{
   margin: -2rem 0rem -2rem 0rem;
 }
 
-header .header-content{
+header .header-content {
   width: 80%;
   margin: auto;
 }
 
-header .header-content .logo{
+header .header-content .logo {
   float: left;
 }
 
-header .header-content h1{
-  font-family: 'Jomhuria';
+header .header-content h1 {
+  font-family: "Jomhuria";
   text-decoration: none;
   color: #ffde3d;
-  -webkit-text-stroke-width: 0.0005rem; 
+  -webkit-text-stroke-width: 0.0005rem;
   -webkit-text-stroke-color: #00444e;
 }
 
 /* Searchbar CSS */
 
 /* Nav CSS */
-nav{
+nav {
   background-color: #ffde3d;
   position: sticky;
   width: 100%;
   top: 0;
-  font-family: 'Bitter';
+  font-family: "Bitter";
 }
 .navbar {
   overflow: hidden;
@@ -54,7 +54,7 @@ nav{
   margin: auto;
 }
 
-.navbar .mini-title{
+.navbar .mini-title {
   display: none;
 }
 
@@ -68,11 +68,11 @@ nav{
 }
 
 /* Search Bar */
-.navbar .search-container{
+.navbar .search-container {
   float: right;
   padding-top: 0.675rem;
 }
-.navbar .search-container input[type=text]{
+.navbar .search-container input[type="text"] {
   font-family: inherit;
   border: 0.1rem solid #ccc;
   border-radius: 0.5rem;
@@ -90,7 +90,7 @@ nav{
 }
 
 .dropdown .dropbtn {
-  font-size: 1.063rem;    
+  font-size: 1.063rem;
   border: none;
   outline: none;
   color: black;
@@ -105,7 +105,7 @@ nav{
   position: absolute;
   background-color: #ddd;
   min-width: 160px;
-  box-shadow: 0px 8px 1rem 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 1rem 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -118,7 +118,8 @@ nav{
   text-align: left;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   background-color: grey;
   color: #ffde3d;
   transition: all 0.5s;
@@ -139,7 +140,9 @@ nav{
 
 /* Navbar Responsive */
 @media screen and (max-width: 720px) {
-  .navbar a, .dropdown .dropbtn, .navbar .search-container {
+  .navbar a,
+  .dropdown .dropbtn,
+  .navbar .search-container {
     display: none;
   }
   .navbar {
@@ -150,23 +153,23 @@ nav{
     float: right;
     display: block;
   }
-  .navbar a.mini-title{
+  .navbar a.mini-title {
     float: left;
     display: block;
     color: teal;
     font-weight: bold;
   }
 
-  .navbar a.mini-title:hover{
+  .navbar a.mini-title:hover {
     color: #ffde3d;
   }
 }
 
 @media screen and (max-width: 720px) {
-  .main{
+  .main {
     width: 95%;
   }
-  header{
+  header {
     display: none;
   }
   .navbar.responsive {
@@ -184,22 +187,27 @@ nav{
     display: block;
     text-align: left;
   }
-  .navbar.responsive .dropdown {float: none;}
-  .navbar.responsive .dropdown-content {position: relative;}
+  .navbar.responsive .dropdown {
+    float: none;
+  }
+  .navbar.responsive .dropdown-content {
+    position: relative;
+  }
   .navbar.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
     text-align: left;
   }
 
-  .navbar input[type=text], .navbar .search-container{
+  .navbar input[type="text"],
+  .navbar .search-container {
     text-align: left;
     width: 100%;
     margin: 0;
     padding: 0.875rem;
   }
 
-  .navbar a.mini-title:hover{
+  .navbar a.mini-title:hover {
     width: 23.4%;
   }
 
@@ -211,7 +219,7 @@ nav{
 }
 
 /* Content CSS */
-main{
+main {
   background: white;
   color: black;
   width: 80%;
@@ -222,8 +230,162 @@ main{
   min-height: 100vh;
 }
 
+/* About page style */
+.about-title {
+  background-color: #007a8b;
+  color: white;
+  padding: 10px 1rem;
+  padding-bottom: 0;
+  margin: 0;
+  font-family: "Jomhuria";
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.about-content {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: justify;
+}
+
+/* About's card style */
+a.btn-profile {
+  background-color: #ffde3d;
+  color: black;
+  margin-top: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  padding: 6px 30px 8px;
+  text-decoration: none;
+}
+
+div.cards {
+  margin: 80px auto;
+  max-width: 960px;
+  text-align: center;
+}
+
+div.card {
+  display: inline-block;
+  margin: 8px;
+  padding-bottom: 1rem;
+  max-width: 300px;
+  text-align: center;
+  width: 300px;
+
+  img {
+    max-width: 300px;
+  }
+
+  .card__image-holder {
+    background: rgba(0, 0, 0, 0.1);
+    height: 0;
+    padding-bottom: 75%;
+  }
+
+  div.card-title {
+    padding: 6px 15px 10px;
+    position: relative;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  div.card-description {
+    padding: 0 15px 10px;
+    position: relative;
+    font-size: 14px;
+  }
+}
+
+/* Contact style */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #f9f9f9;
+  padding: 25px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"]:hover
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #ffde3d;
+  color: black;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: gray;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+
 /* Footer CSS */
-footer{
+footer {
   position: relative;
   z-index: 1;
   width: 100%;
@@ -231,30 +393,30 @@ footer{
   background: #007a8b;
 }
 
-footer .sub-footer{
+footer .sub-footer {
   margin-bottom: -0.5rem;
 }
 
-footer .sub-footer h3{
-  font-family: 'Jomhuria';
+footer .sub-footer h3 {
+  font-family: "Jomhuria";
   color: #ffde3d;
   font-size: 2.5rem;
-  -webkit-text-stroke-width: 0.00001em; 
+  -webkit-text-stroke-width: 0.00001em;
   -webkit-text-stroke-color: #00444e;
   padding-top: 2rem;
 }
 
-footer .sub-footer table{
+footer .sub-footer table {
   margin-left: auto;
   margin-right: auto;
   margin-top: -1rem;
   padding-bottom: 2rem;
 }
-footer .sub-footer table td{
+footer .sub-footer table td {
   padding: 0 1rem 0 1rem;
 }
 
-footer .sub-footer table .socmed img{
+footer .sub-footer table .socmed img {
   max-width: 2.5rem;
   max-height: 2.5rem;
   display: block;
@@ -262,19 +424,19 @@ footer .sub-footer table .socmed img{
   margin-right: 1rem;
 }
 
-footer .sub-footer table .socmed img:hover{
+footer .sub-footer table .socmed img:hover {
   opacity: 0.5;
   border-width: 1px;
   transition: all 0.5s;
 }
 
-footer .main-footer{
-  font-family: 'Bitter';
+footer .main-footer {
+  font-family: "Bitter";
   color: black;
   padding: 0.3em 0 0.3em 0;
-  background:#ffde3d;
+  background: #ffde3d;
 }
 
-footer p{
+footer p {
   font-size: 0.8em;
 }
