@@ -1,9 +1,9 @@
 function resNav() {
-    var x = document.getElementById("resNavbar");
+  var x = document.getElementById("resNavbar");
 
-    if (x.className === "navbar") {
-      x.className += " responsive";
-    } else {
-      x.className = "navbar";
-    }
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
   }
+}
