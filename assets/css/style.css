@@ -1,0 +1,669 @@
+/* Structure CSS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../../assets/images/bg.webp");
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Start of Header CSS */
+/* Header CSS */
+header {
+  background: #007a8b;
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: -2rem 0rem -2rem 0rem;
+}
+
+header .header-content {
+  width: 80%;
+  margin: auto;
+}
+
+header .header-content .logo {
+  float: left;
+}
+
+.logo img {
+  width: 15rem;
+  height: 10rem;
+}
+
+header .header-content h1 {
+  font-family: "Jomhuria";
+  text-decoration: none;
+  color: #ffde3d;
+  -webkit-text-stroke-width: 0.0005rem;
+  -webkit-text-stroke-color: #00444e;
+}
+
+/* Searchbar CSS */
+
+/* Nav CSS */
+nav {
+  background-color: #ffde3d;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  font-family: "Bitter";
+  box-shadow: 0px 3px 20px #00444e;
+  z-index: 1;
+}
+.navbar {
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+}
+
+.navbar .mini-title {
+  display: none;
+}
+
+.navbar a {
+  float: left;
+  display: flex;
+  color: black;
+  text-align: center;
+  padding: 1.05rem 1.5rem;
+  text-decoration: none;
+  height: 100%;
+  font-size: 0.875rem;
+}
+
+/* Search Bar */
+.navbar .search-container {
+  float: right;
+  padding: 0.5rem 0;
+}
+.navbar .search-container input[type="text"] {
+  font-family: inherit;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+
+.navbar .icon_nav {
+  display: none;
+}
+
+/* Dropdown */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 1.063rem;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 1rem 1.5rem;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ddd;
+  min-width: 160px;
+  box-shadow: 0px 8px 1rem 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #007a8b;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: grey;
+  color: #ffde3d;
+  transition: all 0.5s;
+}
+
+.dropdown-content a:hover {
+  background-color: grey;
+  color: #ffde3d;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:click .dropdown-content {
+  display: none;
+}
+
+/* Navbar Responsive */
+@media screen and (max-width: 750px) {
+  .navbar a,
+  .dropdown .dropbtn,
+  .navbar .search-container {
+    display: none;
+  }
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar .icon_nav {
+    background-color: #ffde3d;
+    float: right;
+    display: block;
+    padding: 1rem 1.5rem;
+    border: none;
+    font-size: 0.938rem;
+    font-weight: bolder;
+  }
+
+  .navbar .icon_nav:hover{
+    background-color: grey;
+    transition: all 1s;
+    color: #ffde3d;
+  }
+  .navbar a.mini-title {
+    float: left;
+    display: block;
+    color: teal;
+    font-weight: bold;
+  }
+
+  .navbar a.mini-title:hover {
+    color: #ffde3d;
+  }
+}
+/* Main body Responsive */
+@media screen and (max-width: 750px) {
+  .main {
+    width: 100%;
+  }
+  header {
+    display: none;
+  }
+  .navbar.responsive {
+    position: relative;
+    width: 100%;
+  }
+  .navbar.responsive .icon_nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive .dropdown {
+    float: none;
+  }
+  .navbar.responsive .dropdown-content {
+    position: relative;
+  }
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .navbar input[type="text"],
+  .navbar .search-container {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0.875rem;
+  }
+
+  .navbar.responsive .search-container {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+}
+/* End of Header CSS */
+
+/* Start of Main Content CSS */
+/* Content CSS */
+main {
+  background: white;
+  color: black;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  min-height: 100vh;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+}
+
+/* Main News */
+
+/* Headline */
+.headline {
+  /* position: relative; */
+  /* margin: 0.5rem; */
+  padding: 0.5rem;
+  width: 100%;
+  display: flex;
+}
+
+.head_news {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headline_content {
+  display: flex; /* Important to give the content a width */
+  float: left;
+  font-size: 1.5rem;
+  width: 14rem;
+  background-color: #ffde3d;
+  color: #007a8b;
+  font-family: "Bitter";
+  font-weight: bolder;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  padding: 1rem 1rem;
+
+}
+
+/* Head News */
+.head_news {
+  width: 100%;
+  height: 550px;
+  margin: 0 auto;
+}
+
+/* Main news head */
+.mainHead_news {
+  width: 65%;
+  margin: 0.5rem;
+  display: flex;
+}
+
+.mainHead_news .item_news {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+
+.subHead_news {
+  width: 35%;
+  display: flex;
+  padding: 0.5rem 0;
+  margin: 0.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.subHead_news .item_news {
+  border-radius: 0.5rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 50%;
+}
+
+/* Main item News Content */
+a {
+  text-decoration: none;
+}
+.mainHead_news .item_news .item_content {
+  font-family: "Bitter";
+  font-size: 1.5rem;
+  background-image: linear-gradient(180deg, rgba(255, 0, 0, 0 ), #00444e 100%);
+  color: white;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 50%;
+  padding: 2rem;
+  margin-top: -17rem;
+  position: relative;
+}
+
+.item_news .title_content {
+  width: 100%;
+  height: 75%;
+}
+.item_news .title_content a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+
+.item_content .title_content a:hover {
+  color: #ffde3d;
+  transition: all 0.5s;
+}
+
+.mainHead_news .item_content .content_category {
+  border-radius: 0.5rem;
+  /* margin: 0 0 1.5rem 2rem; */
+  width: 100%;
+  position: absolute;
+}
+
+.item_content .content_category a {
+  color: white;
+}
+.item_content .content_category:hover {
+  transition: all 1s;
+}
+
+.content_category a:hover {
+  color: #ffde3d;
+  text-decoration: underline;
+}
+
+/* Sub item News Content */
+.subHead_news .item_news .item_content {
+  font-family: "Bitter";
+  font-size: 1rem;
+  background-image: linear-gradient(180deg, rgba(255, 0, 0, 0), #00444e 100%);
+  color: white;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 50%;
+  padding: 1rem;
+  margin-top: -7.2rem;
+  position: relative;
+}
+
+.item_news img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Main head News Responsive */
+@media screen and (max-width: 750px) {
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  main{
+    margin: 0.3rem auto;
+    padding: 0;
+  }
+  .headline_content{
+    font-size: 1rem;
+    width: fit-content;
+  }
+  .head_news{
+    height: 50%;
+    display: flex;
+  }
+  .mainHead_news {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+  }
+  .mainHead_news .item_news {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+  .mainHead_news .item_news .item_content{
+    /* margin-top: -15rem; */
+    height: 50%;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0 ;
+  }
+  .mainHead_news .item_content a{
+    font-size: 15px;
+  }
+  .mainHead_news .item_content .content_category {
+    margin-left: 1rem;
+  }
+
+  .subHead_news {
+    display: none;
+  }
+}
+
+/* Body News CSS */
+.latestLine{
+  display: block;
+  background-color: #ffde3d;
+  border-radius: 0.3rem;
+  width: 99%;
+  padding: 0.1rem 1rem;
+  margin: 1rem auto;
+}
+
+.latestLine h3{
+  font-family: 'Bitter';
+  font-weight: bolder;
+}
+
+.body_news{
+  width: 100%;
+  padding: 0rem 0.5rem;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card_news{
+  font-family: 'Bitter';
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  height: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card_head{
+  /* flex: 1 2 15rem; */
+  width: 30%;
+  height:100%;
+  border-radius: 1rem;
+  position: relative;
+}
+.card_head a{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  position: absolute;
+}
+.card_image{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 1rem;
+}
+.card_content{
+  /* flex: 2 1 75%; */
+  width: 60%;
+  padding-right: 0.5rem;
+}
+.card_content a{
+  color: black;
+}
+.card_content .content_category:hover{
+  text-decoration: underline;
+  color: #007a8b;
+  transition: all 0.5s;
+}
+/* .card_content h3{
+  margin-right: 5rem;
+} */
+.card_content h3:hover{
+  color: #007a8b;
+  transition: all 0.5s;
+}
+
+/* Start of responsive body news */
+@media screen and (max-width: 750px) {
+  .body_news{
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .card_news{
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+  }
+  .card_head{
+    height: 250px;
+    width: 100%;
+  }
+  .card_image:hover{
+    scale: 1.2;
+  }
+  .card_content{
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .card_content h3{
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
+.loadMore{
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.load_btn{
+  padding: 0.5rem;
+  width: 10rem;
+  font-family: 'Bitter';
+  border-radius: 2rem;
+  background-color: #ffde3d;
+  border-width: 0.15rem;
+  font-weight: bolder;
+}
+.load_btn:hover{
+  background-color: #007a8b;
+  color: #ffde3d;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+/* End of Body News CSS */
+
+/* End of Main Content CSS */
+
+/* Start of Footer Content CSS */
+/* Footer CSS */
+footer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  background: #007a8b;
+}
+
+footer .sub_footer {
+  margin-bottom: -0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  width: 80%;
+  margin: auto;
+}
+
+footer .sub_footer h3 {
+  font-family: "Jomhuria";
+  color: #ffde3d;
+  font-size: 2.5rem;
+  -webkit-text-stroke-width: 0.00001em;
+  -webkit-text-stroke-color: #00444e;
+  padding-top: 2rem;
+}
+
+footer .sub_footer .footer_links {
+  width: 80%;
+  margin-top: -1rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.footer_links .socmed{
+  padding: 0 1rem 0 1rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.sub_footer .footer_logo{
+  height: 150px;
+  width: 100%;
+  padding: 1rem;
+}
+.footer_logo a{
+  width: 100%;
+  height: 100%;
+}
+.footer_logo a img{
+  height: 100%;
+  width: 18rem;
+}
+footer .sub_footer .footer_links .socmed img {
+  width: 100%;
+  height: 100%  ;
+  object-fit: fill;
+}
+
+footer .sub_footer .footer_links .socmed img:hover {
+  opacity: 0.5;
+  border-width: 1px;
+  transition: all 0.5s;
+}
+
+footer .main-footer {
+  font-family: "Bitter";
+  color: black;
+  padding: 0.3em 0 0.3em 0;
+  background: #ffde3d;
+}
+
+footer p {
+  font-size: 0.8em;
+}
+
+/* Footer Responsive */
+@media screen and (max-width: 750px) {
+  /* .sub_footer .footer_links{
+    width: 100%;
+  } */
+  /* .sub_footer .footer_logo img{
+    width: 50px;
+    height: 50px;
+  } */
+}
+/* End of Footer CSS */
