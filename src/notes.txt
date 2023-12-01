@@ -1,0 +1,4 @@
+Simpan file - file halaman di folder ini, e.g :
+- Halaman Detail News
+- Halaman Search
+- Halaman About Us
