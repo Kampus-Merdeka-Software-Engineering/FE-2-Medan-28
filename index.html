@@ -1,75 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RevoYouth News</title>
-    <link rel = "icon" href="./images/title.png" type = "image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Jomhuria' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+    <link rel="icon" href="./assets/images/title.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Jomhuria" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
     <header id="header">
-        <div class="header-content">
-            <div class="logo">
-                <a href="./"><img src="./images/logo.png"></a>
-            </div>
+      <div class="header-content">
+        <div class="logo">
+          <a href="./"><img src="./assets/images/logo.png" /></a>
         </div>
-        
+      </div>
     </header>
     <nav id="nav">
-        <div class="navbar" id="resNavbar">
-            <a class="mini-title" href="./">Revo Youth News</a>
-            <a href="./">Home</a>
-            <a href="#main">News</a>
-            <div class="dropdown">
-              <button class="dropbtn">Kategori 
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Sub Kategori 1</a>
-                <a href="#">Sub Kategori 2</a>
-                <a href="#">Sub Kategori 3</a>
-              </div>
-            </div> 
-            <a href="#about">About Us</a>
-            <div class="search-container">
-                <form action="./action_page.php">
-                  <input type="text" placeholder="Search.." name="search">
-                </form>
-            </div>
-            <a href="javascript:void(0);" style="font-size:0.938rem;" class="icon" onclick="resNav()">&#9776;</a>
+      <div class="navbar" id="resNavbar">
+        <a class="mini-title" href="./">Revo Youth News</a>
+        <a href="./">HOME</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            NEWS  
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">EKONOMI</a>
+            <a href="#">POLITIK</a>
+            <a href="#">KESEHATAN</a>
+            <a href="#">ENTERTAINMENT</a>
+            <a href="#">OLAHRAGA</a>
+            <a href="#">TEKNOLOGI</a>
           </div>
-    </nav>
-    <main id="main" class="main">
-
-    </main>
-    <footer id="footer">
-        <div class="sub-footer">
-            <div class="logo">
-                <a href="./"><img src="./images/logo.png"></a>
-            </div>
-            <table>
-                <td class="socmed">
-                    <a target="_blank" href="https://www.whatsapp.com"><img src="./images/socmed/whatsapp.png"></a>
-                </td>
-                <td class="socmed">
-                    <a target="_blank" href="https://www.instagram.com"><img src="./images/socmed/instagram.png"></a>
-                </td>
-                <td class="socmed">
-                    <a target="_blank" href="https://www.youtube.com"><img src="./images/socmed/youtube.png"></a>
-                </td>
-                <td class="socmed">
-                    <a target="_blank" href="https://www.twitter.com"><img src="./images/socmed/twitter.png"></a>
-                </td>
-            </table>
         </div>
-        <div class="main-footer">
-            <p>RevoYouth News &copy; Copyright 2023. | All Rights Reserved</p>
-        </div>     
+        <a href="#latestLine">LATEST</a>
+        <a href="#about">ABOUT US</a>
+        <div class="search-container">
+          <form action="./action_page.php">
+            <input type="text" placeholder="Search.." name="search" autocomplete="off"/>
+          </form>
+        </div>
+          <button class="icon_nav" id="iconNav"><i id="iconLogo" class="fa fa-bars" aria-hidden="true"></i></button>
+        
+      </div>
+    </nav>
+
+    <main id="main" class="main">
+      <!-- Start Head News -->
+      <div class="headline">
+        <span class="headline_content"> Trending News ! </span>
+      </div>
+      <hr />
+      <div class="head_news">
+        <div class="mainHead_news">
+          <div class="item_news">
+            <img src="./assets/images/1.jpg" />
+            <div class="item_content">
+              <div class="title_content">
+                <a href="#"
+                  >Main News Title Main News Title Main News Title Main News
+                  Title Main News</a
+                >
+              </div>
+              <span class="content_category">
+                <a href="#">Kategori</a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="subHead_news">
+          <div class="item_news">
+            <img src="./assets/images/2.jpg"/>
+            <span class="item_content">
+              <div class="title_content">
+                <a href="#"
+                  >Sub News Title 1 Sub News Title 1 Sub News Title 1 Sub News
+                  Title 1 Sub News Title 1 Sub News Title 1</a
+                >
+              </div>
+              <span class="content_category">
+                <a href="#">Kategori</a>
+              </span>
+            </span>
+          </div>
+          <div class="item_news">
+            <img src="./assets/images/6.jpg" />
+            <span class="item_content">
+              <div class="title_content">
+                <a href="#"
+                  >Sub News Title 2 Sub News Title 2 Sub News Title 2 Sub News
+                  Title 2 Sub News Title 2 Sub News Title 2</a
+                >
+              </div>
+              <span class="content_category">
+                <a href="#">Kategori</a>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- End Head News -->
+
+      <!-- Start Body News -->
+      <div class="latestLine" id="latestLine">
+        <h3>Latest</h3>
+      </div>
+      <div class="body_news" id="bodyNews">
+        <!-- <div class="card_news">
+          <div class="card_head">
+            <a href="#"></a>
+            <img class="card_image" src="./assets/images/4.jpg">
+          </div>
+          <div class="card_content">
+            <a href="#"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id velit metus. In id nisi leo. Interdum et malesuada fames ac ante ipsum primis in faucibus.</h3></a>
+            <p><a class="content_category" href="#">Kategori</a> | 1 Jam yang lalu</p>
+          </div>
+        </div> -->
+
+      </div>
+      <div class="loadMore">
+        <a href="./search/:index"><button class="load_btn">Load More</button></a>
+      </div>
+      <!-- End Body News -->
+    </main>
+
+    <footer id="footer">
+      <!-- Sub Footer -->
+      <div class="sub_footer">
+        <div class="footer_logo">
+          <a href="./"><img src="./assets/images/logo2.png" /></a>
+        </div>
+        <div class="footer_links">
+          <div class="socmed">
+            <a target="_blank" href="https://www.whatsapp.com"
+              ><img src="./assets/images/socmed/whatsapp.png"
+            /></a>
+          </div>
+          <div class="socmed">
+            <a target="_blank" href="https://www.instagram.com"
+              ><img src="./assets/images/socmed/instagram.png"
+            /></a>
+          </div>
+          <div class="socmed">
+            <a target="_blank" href="https://www.youtube.com"
+              ><img src="./assets/images/socmed/youtube.png"
+            /></a>
+          </div>
+          <div class="socmed">
+            <a target="_blank" href="https://www.twitter.com"
+              ><img src="./assets/images/socmed/twitter.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- End of Sub Footer -->
+      
+      <div class="main-footer">
+        <p>RevoYouth News &copy; Copyright 2023. | All Rights Reserved</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
-<script src="script.js"></script>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/home.js"></script>
