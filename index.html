@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RevoYouth News</title>
     <link rel="icon" href="./assets/images/title.png" type="image/x-icon" />
+
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Jomhuria" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/home.css" />
   </head>
   <body>
     <header id="header">
@@ -24,7 +28,7 @@
         <a href="./">HOME</a>
         <div class="dropdown">
           <button class="dropbtn">
-            NEWS  
+            NEWS &nbsp;  
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
@@ -37,9 +41,9 @@
           </div>
         </div>
         <a href="#latestLine">LATEST</a>
-        <a href="#about">ABOUT US</a>
+        <a href="./src/about.html">ABOUT US</a>
         <div class="search-container">
-          <form action="./action_page.php">
+          <form action="./search.html">
             <input type="text" placeholder="Search.." name="search" autocomplete="off"/>
           </form>
         </div>
@@ -70,12 +74,43 @@
               </span>
             </div>
           </div>
+
+          <!-- Carousel -->
+          <div class="carousel">
+            <div class="cWrapper" id="cWrapper">
+              <!-- <div class="inews_carousel">
+                  <img src="https://source.unsplash.com/300x225/?wave" alt="Inews-1">
+                  <div class="inews_content">
+                      <h2><a href="#">Description Panjang Description Panjang Description Panjang Description Panjang </a></h2>
+                      <blockquote><a href="#">Kategori</a></blockquote>
+                  </div>
+              </div>
+              <div class="inews_carousel">
+                  <img src="https://source.unsplash.com/300x225/?wave" alt="Inews-2">
+                  <div class="inews_content">
+                      <h2><a href="#">Description Panjang Description Panjang </a></h2>
+                      <blockquote>Kategori</blockquote>
+                  </div>
+              </div>
+              <div class="inews_carousel">
+                  <img src="https://source.unsplash.com/300x225/?wave" alt="Inews-3">
+                  <div class="inews_content">
+                      <h2><a href="#">Description</a></h2>
+                      <blockquote>Kategori</blockquote>
+                  </div>
+              </div> -->
+            </div>
+
+            <button class="carousel-btn prev" onclick="prevSlide()"><i class="fa-solid fa-angle-left fa-xl"></i></button>
+            <button class="carousel-btn next" onclick="nextSlide()"><i class="fa-solid fa-angle-right fa-xl"></i></button>
+        </div>
+
         </div>
 
         <div class="subHead_news">
           <div class="item_news">
             <img src="./assets/images/2.jpg"/>
-            <span class="item_content">
+            <div class="item_content">
               <div class="title_content">
                 <a href="#"
                   >Sub News Title 1 Sub News Title 1 Sub News Title 1 Sub News
@@ -85,11 +120,11 @@
               <span class="content_category">
                 <a href="#">Kategori</a>
               </span>
-            </span>
+            </div>
           </div>
           <div class="item_news">
             <img src="./assets/images/6.jpg" />
-            <span class="item_content">
+            <div class="item_content">
               <div class="title_content">
                 <a href="#"
                   >Sub News Title 2 Sub News Title 2 Sub News Title 2 Sub News
@@ -99,7 +134,7 @@
               <span class="content_category">
                 <a href="#">Kategori</a>
               </span>
-            </span>
+            </div>
           </div>
         </div>
       </div>
@@ -123,7 +158,7 @@
 
       </div>
       <div class="loadMore">
-        <a href="./search/:index"><button class="load_btn">Load More</button></a>
+        <a href="./search/index"><button class="load_btn">Load More</button></a>
       </div>
       <!-- End Body News -->
     </main>
@@ -167,3 +202,4 @@
 </html>
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/home.js"></script>
+<script src="./assets/js/head_slider.js"></script>

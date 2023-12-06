@@ -1,0 +1,574 @@
+/* Start of Main Content CSS */
+  /* Main News */
+  
+  /* Headline */
+  .headline {
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+  }
+  
+  .headline_content {
+    display: flex; /* Important to give the content a width */
+    float: left;
+    font-size: 1.5rem;
+    width: 14rem;
+    background-color: #ffde3d;
+    color: #007a8b;
+    font-family: "Bitter";
+    font-weight: bolder;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    padding: 1rem 1rem;
+  
+  }
+  
+  /* Head News */
+  .head_news {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+  }
+  
+  /* Carousel */
+  
+  .carousel {
+    display: none;
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.5rem;
+}
+
+.cWrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.inews_carousel {
+    position: relative;
+    height: 100%;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+}
+
+.inews_carousel img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    position: relative;
+}
+/* 
+.dark-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+} */
+
+.inews_content {
+  font-family: 'Poppins';
+  position: absolute;
+  height: 50%;
+  top: 75%;
+  left: 50%;
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0), #00444e 100%);
+  /* background: rgba(0, 0, 0, 0.5); */
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
+  z-index: 1;
+  padding: 1rem;
+}
+
+.inews_carousel h2 {
+  /* padding: 0 0.5rem; */
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.inews_carousel h2 a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.inews_carousel h2 a:hover {
+    color: #ffd700;
+}
+
+.inews_carousel blockquote {
+  position: absolute;
+  font-size: 16px;
+  margin-left: 0px;
+  bottom: 5px;
+}
+.inews_carousel blockquote a{
+  color: #fff; 
+}
+.inews_carousel blockquote a:hover{
+  color: #ffde3d;
+  text-decoration: underline; 
+}
+
+.carousel-btn {
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 50px;
+  background: rgba(255, 222, 61, .45);
+  /* background-color: #ffde3d; */
+  color: #0fcae2;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+.carousel-btn.prev{
+  left: 3px;
+  border-radius: 0 1rem 1rem 0;
+}
+.carousel-btn.next{
+  right: 3px;
+  border-radius:  1rem 0 0 1rem;
+}
+
+.card-header-container {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-header {
+    width: 170px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 70px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-header-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    padding-left: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.card-header h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card-header h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+.card-header p {
+    font-size: 14px;
+}
+
+/* Carousel Responsive */
+@media screen and (max-width: 450px) {
+  .inews_content{
+    padding: 0.5rem 1rem;
+  }
+  .inews_content h2 a{
+    font-size: 13px;
+  }
+  .inews_content blockquote{
+    font-size: 10px;
+    margin-left: 2px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .inews_content h2{
+    font-size: 18px;
+  }
+  .carousel-btn{
+    width: 30px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+    .carousel {
+      display: flex;
+      width: 100%;
+      margin-right: 0;
+    }
+}
+
+/* CSS CAROUSEL END */
+
+  @media screen and (max-width: 800px) {
+    .head_news{
+      height: fit-content;
+    }
+    .mainHead_news{
+      width: 100%;
+    }
+    .wrapper{
+      display: block;
+    }
+  }
+
+  /* Main news head */
+  .mainHead_news {
+    width: 65%;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+  }
+  
+  .mainHead_news .item_news {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    display: flex;
+    position: relative;
+  }
+  
+  .subHead_news {
+    width: 35%;
+    display: flex;
+    padding: 0.5rem 0;
+    margin: 0.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .subHead_news .item_news {
+    border-radius: 0.5rem;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    height: 50%;
+  }
+  
+  /* Main item News Content */
+  a {
+    text-decoration: none;
+  }
+  .mainHead_news .item_news .item_content {
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0 ), #00444e 100%);
+    color: white;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+    bottom: 0;
+    position: absolute;
+  }
+  
+  .item_news .title_content {
+    width: 100%;
+    height: 75%;
+  }
+  .item_news .title_content a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    text-align: justify;
+  }
+  
+  .item_content .title_content a:hover {
+    color: #ffde3d;
+    transition: all 0.5s;
+  }
+  
+  .mainHead_news .item_content .content_category {
+    border-radius: 0.5rem;
+    width: fit-content;
+    position: absolute;
+  }
+  
+  .item_content .content_category a {
+    color: white;
+  }
+  .item_content .content_category:hover {
+    transition: all 1s;
+  }
+  
+  .content_category a:hover {
+    color: #ffde3d;
+    text-decoration: underline;
+  }
+  
+  /* Sub item News Content */
+  .subHead_news .item_news .item_content {
+    font-family: "Poppins";
+    font-size: 1rem;
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0), #00444e 100%);
+    color: white;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 60%;
+    padding: 0.8rem;
+    bottom: 0;
+    /* margin-top: -7.2rem; */
+    position: absolute;
+  }
+  
+  .item_news img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  /* Main head News Responsive */
+  @media screen and (max-width: 1000px) {
+    .head_news{
+      height: 25rem;
+      display: flex;
+    }
+    .mainHead_news .title_content{
+      font-size: 1.2rem;
+    }
+    .mainHead_news .content_category a{
+      font-size: 1rem;
+    }
+    .subHead_news .title_content{
+      font-size: 0.8rem;
+    }
+    .subHead_news .content_category a{
+      font-size: 0.7rem;
+    }
+
+    .card_news{
+      height: 12rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    main{
+      margin: 0.3rem auto;
+      padding: 0;
+    }
+    .headline_content{
+      font-size: 1rem;
+      width: fit-content;
+    }
+    .head_news{
+      height: 20rem;
+      display: flex;
+    }
+    .mainHead_news {
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+    .mainHead_news .item_news {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5rem;
+    }
+    .mainHead_news .item_news .item_content{
+      height: 50%;
+      padding: 1rem;
+      position: absolute;
+      bottom: 0 ;
+    }
+    .mainHead_news .item_content a{
+      font-size: 15px;
+    }
+  
+    .subHead_news {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    main{
+      width: 90%;
+    }
+    .mainHead_news{
+      width: 100%;
+    }
+    .mainHead_news .item_news{
+      display: none;
+    }
+
+    .subHead_news{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .head_news{
+      height: 18rem;
+    }
+  }
+  
+  /* Body News CSS */
+  .latestLine{
+    display: block;
+    background-color: #ffde3d;
+    border-radius: 0.3rem;
+    width: 99%;
+    padding: 0.1rem 1rem;
+    margin: 0.5rem auto;
+  }
+  
+  .latestLine h3{
+    font-family: 'Bitter';
+    font-weight: bolder;
+  }
+  
+  .body_news{
+    width: 100%;
+    padding: 0rem 0.5rem;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .card_news{
+    font-family: 'Poppins';
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    height: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: inherit;
+    gap: 1rem;
+  }
+  .card_head{
+    width: 25%;
+    height:100%;
+    border-radius: 1rem;
+    position: relative;
+  }
+  .card_head a{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    position: absolute;
+  }
+  .card_image{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 1rem;
+  }
+  .card_content{
+    width: 60%;
+    padding-right: 0.5rem;
+    text-align: justify;
+  }
+  .card_content a{
+    color: black;
+  }
+  .card_content .content_category:hover{
+    text-decoration: underline;
+    color: #007a8b;
+    transition: all 0.5s;
+  }
+  .card_content h3:hover{
+    color: #007a8b;
+    transition: all 0.5s;
+  }
+
+  /* Start of responsive body news */
+  @media screen and (max-width: 350px) {
+    .card_head{
+      height: 100px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .body_news{
+      width: 100%;
+      padding: 0 1.5rem;
+    }
+    .card_news{
+      width: 100%;
+      margin: auto;
+      height: fit-content;
+    }
+    .card_head{
+      height: 250px;
+      width: 100%;
+    }
+    .card_image:hover{
+      scale: 1.2;
+    }
+    .card_content{
+      padding: 0 0.5rem;
+      font-size: 0.8rem;
+      width: 100%;
+    }
+    .card_content h3{
+      margin: 0;
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    .card_head{
+      height: 160px;
+    }
+    .card_content h3{
+      font-size: 13px;
+    }
+    .card_content p{
+      font-size: 11px
+    }
+  }
+
+  .loadMore{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .load_btn{
+    padding: 0.5rem;
+    width: 10rem;
+    font-family: 'Bitter';
+    border-radius: 2rem;
+    background-color: #ffde3d;
+    border-width: 0.15rem;
+    font-weight: bolder;
+  }
+  .load_btn:hover{
+    background-color: #007a8b;
+    color: #ffde3d;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  /* End of Body News CSS */
+  
+  /* End of Main Content CSS */
