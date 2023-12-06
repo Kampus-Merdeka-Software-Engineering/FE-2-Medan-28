@@ -1,14 +1,62 @@
-// Fetch data on body News from API - Move it to api specifically for APIs
+// Fetch News from API - Move it to api specifically for APIs
 const baseUrl = 'https://dummyjson.com';
 
-const fetchNews = async () => {
+// Fetch Carousel
+const fetchCarousel = async () => {
   const url = `${baseUrl}/products`;
   const res = await fetch(url);
 
   return res.json();
 };
 
-fetchNews()
+fetchCarousel()
+.then((res) => {
+  if (res) {
+    const { products: listOfProducts } = res;
+
+    if (listOfProducts.length > 0 || listOfProducts.length < 10) {
+      // console.log(listOfProducts);
+      const cardProduct = document.getElementById('cWrapper');
+      cardProduct.innerHTML = listOfProducts.map((product) => {
+        const {
+          id,
+          title,
+          category,
+          description,
+          thumbnail,
+          price,
+          images,
+        } = product;
+
+        const thumbnaiImage = images[1];
+        // console.log(thumbnaiImage);
+        if(id <= 3){
+        return (
+          `
+          <div class="inews_carousel">
+            <img src="${thumbnaiImage}" alt="Inews">
+            <div class="inews_content">
+                <h2><a href="#">${description}</a></h2>
+                <blockquote><a href="#">${category}</a></blockquote>
+            </div>
+          </div>
+          `
+        );
+      }
+      }).join('');
+    }
+  }
+});
+
+// Fetch Body News
+const fetchLatest = async () => {
+  const url = `${baseUrl}/products`;
+  const res = await fetch(url);
+
+  return res.json();
+};
+
+fetchLatest()
 .then((res) => {
   if (res) {
     const { products: listOfProducts } = res;
