@@ -1,0 +1,136 @@
+/* Start of Search CSS */
+
+/* Headline */
+div .search_result {
+    /* position: relative; */
+    padding: 1.5%;
+    width: 85%;
+    display: flex;
+    background-color: white;
+    border-radius: 1.5rem;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  .main .search_result {
+    font-family: 'Jomhuria';
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+
+  .card_news{
+    float: left;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 4%;
+    background: white;
+    border-radius: 1.5rem;
+  }
+
+  .main .card_news .card_search {
+    padding: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .item_text {
+    font-family: "bitter";
+    font-size: small;
+    float: right;
+    padding: 20;
+    margin-right: 55%;
+    margin-top: 1.5rem;
+  }
+  
+  a {
+    font-size: medium;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #007a8b;
+    transition: all 0.5s;
+  }
+  
+  
+  .item_news img {
+    object-fit: fill;
+    width: 20%;
+    height: 20%;
+    border-radius: 0.5rem;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Main head News Responsive */
+  @media screen and (max-width: 750px) {
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    main{
+      margin: 0.3rem auto;
+      padding: 0;
+    }
+    .headline_content{
+      font-size: 1rem;
+      width: fit-content;
+    }
+    .head_news{
+      height: 50%;
+      display: flex;
+    }
+  
+  }
+
+  .loadMore{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .load_btn{
+    padding: 0.5rem;
+    width: 10rem;
+    font-family: 'Bitter';
+    border-radius: 2rem;
+    background-color: #ffde3d;
+    border-width: 0.15rem;
+    font-weight: bolder;
+  }
+  .load_btn:hover{
+    background-color: #007a8b;
+    color: #ffde3d;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  /* End of Main Content CSS */
+
+  /*Media Queries*/
+
+  /*Laptop*/
+  @media (max-width: 1366px) {
+    html {
+      font-size: 75%;
+    }
+  }
+
+  /*Tablet*/
+  @media (max-width: 658px) {
+    html {
+      font-size: 62.5%;
+    }
+  }
+
+  /*Mobile Phone*/
+  @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+  }
