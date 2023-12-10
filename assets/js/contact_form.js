@@ -1,3 +1,5 @@
+const baseUrl = 'https://medan-28-backend.up.railway.app';
+
 const inputs = document.querySelectorAll(".input");
 
 function focusFunc() {
@@ -36,7 +38,7 @@ function postContactUs(event){
     };
 
   // post ke BE
-  fetch('http://localhost:3000/sendContacts', {
+  fetch(`${baseUrl}/sendContacts`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
