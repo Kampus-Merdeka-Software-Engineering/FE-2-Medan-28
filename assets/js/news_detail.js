@@ -57,7 +57,7 @@ function renderDetail(articles){
               <div class="details_category">
                   <div class="item_category">
                     <i class="fa-sharp fa-solid fa-list fa-xl"></i>
-                    <a href="/./src/search.html?kategori=${news.category}">${news.category}</a>
+                    <a href="./search.html?kategori=${news.category}">${news.category}</a>
                   </div>
               </div>
         `
@@ -89,7 +89,7 @@ function renderOther (articles){
           <img src="${news.urlImage}">
         </div>
         <div class="content_other">
-          <h4><a class="items_link" href="../src/news_detail.html?id=${news.id}">${news.title}</a></h4>
+          <h4><a class="items_link" href="./news_detail.html?id=${news.id}">${news.title}</a></h4>
           <p>${otherDate}</p>
         </div>
       </div>
@@ -117,7 +117,7 @@ function renderRelated  (articles){
             <img src="${news.urlImage}">
           </div>
           <div class="content_related">
-            <h4><a class="items_link" href="../src/news_detail.html?id=${news.id}">${news.title}</a></h4>
+            <h4><a class="items_link" href="./news_detail.html?id=${news.id}">${news.title}</a></h4>
             <p>${listDate}</p>
           </div>
         </div>
@@ -158,10 +158,10 @@ function dateFormat(newsDate){
 // Redirect to Search Pages
 function redirectToSearch() {
   // You can use window.location.href to redirect to the detail page
-  window.location.href = '/./src/search.html?index';
+  window.location.href = './search.html?index';
 }
 
 function redirectToSearchCategory(newsCategory) {
   // You can use window.location.href to redirect to the detail page
-  window.location.href = '/./src/search.html?kategori=' + newsCategory;
+  window.location.href = './search.html?kategori=' + newsCategory;
 }

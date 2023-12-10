@@ -21,7 +21,7 @@ function renderDataToContent(articles){
 
   if (newsCategory) {
     header.innerHTML=`
-    <a href="../">HOME</a> | <a href="../src/search.html?kategori=${newsCategory}">${newsCategory.toUpperCase()}</a>
+    <a href="../">HOME</a> | <a href="./search.html?kategori=${newsCategory}">${newsCategory.toUpperCase()}</a>
     `
 
     headerDesc.innerHTML=`
@@ -35,12 +35,12 @@ function renderDataToContent(articles){
         content.innerHTML+=`
         <div class="card_news">
             <div class="card_head">
-              <a class="card_link" href="/src/news_detail.html?id=${article.id}"></a>
+              <a class="card_link" href="./news_detail.html?id=${article.id}"></a>
               <img class="card_image" src=${article.urlImage} alt="">
           </div>
             <div class="card_content">
-              <a href="/./src/news_detail.html?id=${article.id}"><h3>${article.title}</h3></a>
-              <p><a class="content_category" href="/./src/search.html?kategori=${article.category}">${article.category}</a> | ${date}</p>
+              <a href="./news_detail.html?id=${article.id}"><h3>${article.title}</h3></a>
+              <p><a class="content_category" href="./search.html?kategori=${article.category}">${article.category}</a> | ${date}</p>
             </div>
           </div>
         `
@@ -69,12 +69,12 @@ function renderDataToContent(articles){
         content.innerHTML+=`
         <div class="card_news">
           <div class="card_head">
-            <a class="card_link" href="/src/news_detail.html?id=${article.id}"></a>
+            <a class="card_link" href="./news_detail.html?id=${article.id}"></a>
             <img class="card_image" src=${article.urlImage} alt="">
         </div>
           <div class="card_content">
-            <a href="/./src/news_detail.html?id=${article.id}"><h3>${article.title}</h3></a>
-            <p><a class="content_category" href="/./src/search.html?kategori=${article.category}">${article.category}</a> | ${date}</p>
+            <a href="./news_detail.html?id=${article.id}"><h3>${article.title}</h3></a>
+            <p><a class="content_category" href="./search.html?kategori=${article.category}">${article.category}</a> | ${date}</p>
           </div>
         </div>
       `
@@ -110,12 +110,12 @@ function renderContentIndex(articles){
     content.innerHTML+=`
     <div class="card_news">
         <div class="card_head">
-          <a class="card_link" href="/src/news_detail.html?id=${article.id}"></a>
+          <a class="card_link" href="./news_detail.html?id=${article.id}"></a>
           <img class="card_image" src=${article.urlImage} alt="">
       </div>
         <div class="card_content">
-          <a href="/./src/news_detail.html?id=${article.id}"><h3>${article.title}</h3></a>
-          <p><a class="content_category" href="/./src/search.html?kategori=${article.category}">${article.category}</a> | ${date}</p>
+          <a href="./news_detail.html?id=${article.id}"><h3>${article.title}</h3></a>
+          <p><a class="content_category" href="./search.html?kategori=${article.category}">${article.category}</a> | ${date}</p>
         </div>
       </div>
     `
