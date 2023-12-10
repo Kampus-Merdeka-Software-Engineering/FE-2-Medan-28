@@ -22,6 +22,7 @@ function renderDataToContent(articles){
   if (newsCategory) {
     header.innerHTML=`
     <a href="../">HOME</a> | <a href="./search.html?kategori=${newsCategory}">${newsCategory.toUpperCase()}</a>
+    <hr>
     `
 
     headerDesc.innerHTML=`
@@ -36,7 +37,7 @@ function renderDataToContent(articles){
         <div class="card_news">
             <div class="card_head">
               <a class="card_link" href="./news_detail.html?id=${article.id}"></a>
-              <img class="card_image" src=${originUrl}/${article.urlImage} alt="">
+              <img class="card_image" src=${originUrl}${article.urlImage} alt="">
           </div>
             <div class="card_content">
               <a href="./news_detail.html?id=${article.id}"><h3>${article.title}</h3></a>
@@ -49,6 +50,8 @@ function renderDataToContent(articles){
   }else if (keyword) {
     header.innerHTML=`
     <a href="../">HOME</a> | <a>NEWS</a>
+    <br>
+    <hr>
     `
     headerDesc.innerHTML=`
     <div class="listHead_desc">
@@ -70,7 +73,7 @@ function renderDataToContent(articles){
         <div class="card_news">
           <div class="card_head">
             <a class="card_link" href="./news_detail.html?id=${article.id}"></a>
-            <img class="card_image" src=${originUrl}/${article.urlImage} alt="">
+            <img class="card_image" src=${originUrl}${article.urlImage} alt="">
         </div>
           <div class="card_content">
             <a href="./news_detail.html?id=${article.id}"><h3>${article.title}</h3></a>
@@ -98,6 +101,7 @@ function renderContentIndex(articles){
   
   header.innerHTML=`
   <a href="../">HOME</a> | <a>INDEX</a>
+  <hr>
   `
 
   headerDesc.innerHTML=`
@@ -111,7 +115,7 @@ function renderContentIndex(articles){
     <div class="card_news">
         <div class="card_head">
           <a class="card_link" href="./news_detail.html?id=${article.id}"></a>
-          <img class="card_image" src=${originUrl}/${article.urlImage} alt="">
+          <img class="card_image" src=${originUrl}${article.urlImage} alt="">
       </div>
         <div class="card_content">
           <a href="./news_detail.html?id=${article.id}"><h3>${article.title}</h3></a>
