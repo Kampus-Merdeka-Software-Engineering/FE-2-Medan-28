@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RevoYouth News</title>
-    <link rel="icon" href="/assets/images/title.png" style="object-fit: fill;" type="image/x-icon" />
+    <title>RevoYouth News - Detail</title>
+    <link rel="icon" href="/assets/images/title.png" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"/>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -12,9 +12,11 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> -->
 
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/news_detail.css" />
 
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <!-- Test links -->
+    <!-- <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-2e45578ecf3b28ce6383d10b8c0bf4d0.css?vsn=d"> -->
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
       <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css" >
       <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
       <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
@@ -34,7 +36,7 @@
         <a href="/">HOME</a>
         <div class="dropdown">
           <button class="dropbtn">
-            NEWS &nbsp;  
+            NEWS &nbsp;
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
@@ -46,7 +48,7 @@
             <a href="/src/search.html?kategori=Teknologi">TEKNOLOGI</a>
           </div>
         </div>
-        <a href="#latestLine">LATEST</a>
+        <a href="/index.html#latestLine">LATEST</a>
         <a href="/src/about.html">ABOUT US</a>
         <div class="search-container">
           <form method="get" action="/src/search.html">
@@ -54,52 +56,64 @@
             <button type="submit" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
-        <button class="icon_nav" id="iconNav"><i id="iconLogo" class="fa fa-bars" aria-hidden="true"></i></button>
+          <button class="icon_nav" id="iconNav"><i id="iconLogo" class="fa fa-bars" aria-hidden="true"></i></button>
         
       </div>
     </nav>
 
     <main id="main" class="main">
-      <!-- Start Head News -->
-      <div class="headline"> 
-        <div class="headline_content"><h4>Trending News !</h4></div>
+      <div class="details_header" id="detailsHeader">
+          <!-- Details Header Link -->
       </div>
-      <hr />
-      <div class="head_news">
-        <div class="mainHead_news">
-          <div class="item_news" id="mainHead_item">
-            <!-- mainHead Item News -->
-          </div>
+      <hr>
+      <div class="main_details">
+        <div class="main_news" id="mainNews">
 
-          <!-- Carousel -->
-          <div class="carousel">
-            <div class="cWrapper" id="cWrapper">
-              <!-- Main Head carousel Item News -->
+          <!-- Main News Content
+              Consist of:
+              - News Image
+              - News Description (Title, Author, Date Published)
+              - News Content
+              - News Category
+          -->
+        </div>
+        <div class="side_content">
+          <!-- News Related -->
+            <div class="news_related">
+              <div class="title_related">
+                <h3>Terkait</h3>
+                <div class="more_related" id="moreRelated">
+                  <!-- More Related Link -->
+                </div>
+              </div>
+              <hr>
+              <!-- List Related -->
+              <div class="list_related" id="listRelated">
+                <!-- Related List Item News -->
+              </div>
+              <!-- End List Related -->
             </div>
+            <!-- End News Related -->
 
-            <button class="carousel-btn prev" onclick="prevSlide()"><i class="fa-solid fa-angle-left fa-xl"></i></button>
-            <button class="carousel-btn next" onclick="nextSlide()"><i class="fa-solid fa-angle-right fa-xl"></i></button>
+            <!-- News Other -->
+            <div class="news_other">
+              <div class="title_other">
+                <h3>Lainnya</h3>
+                <div class="more_other" id="moreOther">
+                  <!-- More Other Link -->
+                </div>
+              </div>
+              <hr>
+              <!-- List Other -->
+              <div class="list_other" id="listOther">
+                <!-- Other List Item News -->
+              </div>
+              <!-- End List Other -->
+            </div>
+            <!-- End News Other -->
+
         </div>
-
-        </div>
-
-        <div class="subHead_news" id="subHead_item">
-          <!-- Sub Head Item News -->
-        </div>
       </div>
-      <!-- End Head News -->
-
-      <!-- Start Body News -->
-      <div class="latestLine" id="latestLine">
-        <h3>Latest</h3>
-      </div>
-      <div class="body_news" id="bodyNews">
-        <!-- Body Item News -->
-      </div>
-      <div class="loadMore">
-        <a href="/src/search.html?index"><button class="load_btn">Lebih banyak</button></a>
-      </div>
-      <!-- End Body News -->
     </main>
 
     <footer id="footer">
@@ -140,5 +154,4 @@
   </body>
 </html>
 <script src="/assets/js/script.js"></script>
-<script src="/assets/js/home.js"></script>
-<script src="/assets/js/head_slider.js"></script>
+<script src="/assets/js/news_detail.js"></script>

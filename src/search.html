@@ -3,22 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RevoYouth News</title>
-    <link rel="icon" href="/assets/images/title.png" style="object-fit: fill;" type="image/x-icon" />
+    <title>RevoYouth News - Search</title>
+    <link rel="icon" href="/assets/images/title.png" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"/>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/home.css" />
-
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
-      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css" >
-      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
-      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
-      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/search.css" />
   </head>
   <body>
     <header id="header">
@@ -34,7 +28,7 @@
         <a href="/">HOME</a>
         <div class="dropdown">
           <button class="dropbtn">
-            NEWS &nbsp;  
+            NEWS &nbsp;
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
@@ -46,60 +40,38 @@
             <a href="/src/search.html?kategori=Teknologi">TEKNOLOGI</a>
           </div>
         </div>
-        <a href="#latestLine">LATEST</a>
-        <a href="/src/about.html">ABOUT US</a>
+        <a href="/index.html#latestLine">LATEST</a>
+        <a href="./about.html">ABOUT US</a>
         <div class="search-container">
           <form method="get" action="/src/search.html">
             <input type="text" placeholder="Search.." name="keyword" autocomplete="off"/>
             <button type="submit" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
-        <button class="icon_nav" id="iconNav"><i id="iconLogo" class="fa fa-bars" aria-hidden="true"></i></button>
-        
+          <button class="icon_nav" id="iconNav"><i id="iconLogo" class="fa fa-bars" aria-hidden="true"></i></button>
       </div>
     </nav>
 
     <main id="main" class="main">
-      <!-- Start Head News -->
-      <div class="headline"> 
-        <div class="headline_content"><h4>Trending News !</h4></div>
+      <!-- Search Header -->
+      <div class="search_header" id="searchHeader">
+        <!-- Here lies the Header -->
       </div>
-      <hr />
-      <div class="head_news">
-        <div class="mainHead_news">
-          <div class="item_news" id="mainHead_item">
-            <!-- mainHead Item News -->
-          </div>
+      <!-- Details Header -->
 
-          <!-- Carousel -->
-          <div class="carousel">
-            <div class="cWrapper" id="cWrapper">
-              <!-- Main Head carousel Item News -->
-            </div>
+      <!-- Start of Head Description -->
 
-            <button class="carousel-btn prev" onclick="prevSlide()"><i class="fa-solid fa-angle-left fa-xl"></i></button>
-            <button class="carousel-btn next" onclick="nextSlide()"><i class="fa-solid fa-angle-right fa-xl"></i></button>
-        </div>
-
-        </div>
-
-        <div class="subHead_news" id="subHead_item">
-          <!-- Sub Head Item News -->
-        </div>
+      <div class="list_head" id="listHead">
+        <!-- Here lies the list header description -->
       </div>
-      <!-- End Head News -->
 
-      <!-- Start Body News -->
-      <div class="latestLine" id="latestLine">
-        <h3>Latest</h3>
+
+      <!-- End of Head Description -->
+      <hr>
+
+      <div class="list_news" id="listNews">
+        <!-- List Search News -->
       </div>
-      <div class="body_news" id="bodyNews">
-        <!-- Body Item News -->
-      </div>
-      <div class="loadMore">
-        <a href="/src/search.html?index"><button class="load_btn">Lebih banyak</button></a>
-      </div>
-      <!-- End Body News -->
     </main>
 
     <footer id="footer">
@@ -140,5 +112,4 @@
   </body>
 </html>
 <script src="/assets/js/script.js"></script>
-<script src="/assets/js/home.js"></script>
-<script src="/assets/js/head_slider.js"></script>
+<script src="/assets/js/search.js"></script>
