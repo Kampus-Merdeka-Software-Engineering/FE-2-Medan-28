@@ -1,6 +1,5 @@
 main{
     padding: 0rem;
-    /* background-color: #ccc; */
     overflow: hidden;
 }
 /* Start of About */
@@ -42,7 +41,6 @@ main{
     gap: 5rem 3rem;
     display: flex;
     align-items: center;
-    /* background-color: #ccc; */
 }
 .group_title{
     display: flex;
@@ -60,8 +58,6 @@ main{
     position: relative;
     width: 350px;
     height: 150px;
-    /* height: 380px; */
-    /* background-image: linear-gradient(15deg,#ffde3d, #007a8b); */
     background:#007a8b;
     border-radius: 20px;
     box-shadow: 0 35px 80px rgba(0,0,0,0.15);
@@ -135,7 +131,6 @@ main{
 .card_profile .profile_content .details .data{
     display: block;
     justify-content:flex-end;
-    /* background: rgba(0, 122, 139, .5); */
     width: 80%;
     margin: auto;
     height: fit-content;
@@ -191,7 +186,6 @@ main{
     justify-content: center;
     flex: wrap;
     width: 100%;
-    /* background-color: #007a8b; */
     height: max-content;
     padding: 0.5rem;
 }
@@ -201,7 +195,6 @@ main{
     background-color: #007a8b;
     border-radius: 1rem;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-    /* z-index: 1000; */
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -225,7 +218,6 @@ main{
   
   .contact-form form {
     padding: 1rem 2.3rem 2.2rem;
-    /* z-index: 10; */
     overflow: hidden;
     position: relative;
   }
@@ -405,12 +397,10 @@ main{
     text-align: center;
     line-height: 35px;
     margin-right: 0.5rem;
-    /* transition: 0.5s; */
   }
   
   .social-icons a:hover {
     transform: scale(1.05);
-    /* background: linear-gradient(90deg, #e7ddae, #ffde3d); */
     background-color: #ffde3d;
     color: #333;
     transition: 0.5s;
