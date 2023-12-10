@@ -19,5 +19,5 @@ resNav.addEventListener("click", ()=>{
 
 function redirectToSearch(newsCategory) {
   // You can use window.location.href to redirect to the detail page
-  window.location.href = '/./src/search.html?kategori=' + newsCategory;
+  window.location.href = './search.html?kategori=' + newsCategory;
 }

@@ -19,10 +19,10 @@ function renderCarousel(items){
     let date = dateFormat(item.createdAt);
     content.innerHTML+=`
         <div class="inews_carousel">
-          <a href="/src/news_detail.html?id=${item.id}"><img src="${item.urlImage}" alt="Inews"></a>
+          <a href="./src/news_detail.html?id=${item.id}"><img src="${item.urlImage}" alt="Inews"></a>
           <div class="inews_content">
-              <h2><a href="/src/news_detail.html?id=${item.id}">${item.title}</a></h2>
-              <blockquote><a href="/src/search.html?kategori=${item.category}">${item.category}</a></blockquote>
+              <h2><a href="./src/news_detail.html?id=${item.id}">${item.title}</a></h2>
+              <blockquote><a href="./src/search.html?kategori=${item.category}">${item.category}</a></blockquote>
           </div>
         </div>
         
@@ -34,10 +34,10 @@ function renderCarousel(items){
       <img src="${News1.urlImage}" />
       <div class="item_content">
         <div class="title_content">
-          <a href="/src/news_detail.html?id=${News1.id}">${News1.title}</a>
+          <a href="./src/news_detail.html?id=${News1.id}">${News1.title}</a>
         </div>
         <span class="content_category">
-          <a href="/src/search.html?kategori=${News1.category}">${News1.category}</a>
+          <a href="./src/search.html?kategori=${News1.category}">${News1.category}</a>
         </span>
       </div>
       `
@@ -52,11 +52,11 @@ function renderCarousel(items){
         <img src="${item.urlImage}"/>
         <div class="item_content">
           <div class="title_content">
-            <a href="/src/news_detail.html?id=${item.id}">${item.title}</a
+            <a href="./src/news_detail.html?id=${item.id}">${item.title}</a
             >
           </div>
           <span class="content_category">
-            <a href="/src/search.html?kategori=${item.category}">${item.category}</a>
+            <a href="./src/search.html?kategori=${item.category}">${item.category}</a>
           </span>
         </div>
       </div>
@@ -79,7 +79,7 @@ function renderBodyNews(articles){
       content.innerHTML+=`
       <div class="card_news">
           <div class="card_head">
-            <a class="card_link" href="/./src/news_detail.html?id=${article.id}"></a>
+            <a class="card_link" href="./src/news_detail.html?id=${article.id}"></a>
             <img class="card_image" src=${article.urlImage} alt="">
         </div>
           <div class="card_content">
@@ -94,12 +94,12 @@ function renderBodyNews(articles){
 
 function redirectToDetail(newsId) {
   // You can use window.location.href to redirect to the detail page
-  window.location.href = '/./src/news_detail.html?id=' + newsId;
+  window.location.href = './src/news_detail.html?id=' + newsId;
 }
 
 function redirectToSearch(newsCategory) {
   // You can use window.location.href to redirect to the detail page
-  window.location.href = '/./src/search.html?kategori=' + newsCategory;
+  window.location.href = './src/search.html?kategori=' + newsCategory;
 }
 
 function dateFormat(newsDate){
