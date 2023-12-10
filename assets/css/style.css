@@ -82,11 +82,34 @@ nav {
   float: right;
   padding: 0.5rem 0;
 }
+.navbar .search-container form{
+  background-color: #007a8b;
+  border-radius: 0.5rem;
+  padding-right: 0.5rem;
+}
+.navbar .search-container button i{
+  color: #ffde3d;
+}
 .navbar .search-container input[type="text"] {
   font-family: inherit;
   border: 0.1rem solid #ccc;
-  border-radius: 0.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
   padding: 0.5rem;
+}
+.navbar .search-container button{
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+}
+.navbar .search-container form:hover{
+  background-color: grey;
+  transition: 0.5s ease;
+}
+
+.navbar .search-container input[type="text"]:focus::placeholder{
+  color: transparent;
 }
 
 
@@ -152,7 +175,7 @@ nav {
 }
 
 /* Navbar Responsive */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .navbar a,
   .dropdown .dropbtn,
   .navbar .search-container {
@@ -160,6 +183,9 @@ nav {
   }
   .navbar {
     width: 100%;
+  }
+  .navbar .search-container input[type="text"] {
+    border-radius: 0.5rem;
   }
 
   .navbar .icon_nav {
@@ -171,14 +197,13 @@ nav {
     font-size: 0.938rem;
     font-weight: bolder;
   }
-
   .navbar .icon_nav:hover{
     background-color: grey;
     transition: all 1s;
     color: #ffde3d;
   }
+
   .navbar .mini-title {
-    /* float: left; */
     border-radius: 1rem;
     margin: 0.5rem 0.5rem ;
     padding: 0.5rem 1rem;
@@ -188,18 +213,23 @@ nav {
     color: #007a8b;
     font-weight: bolder;
   }
-
   .navbar .mini-title:hover {
     color: #ffde3d;
   }
 }
 /* Main body Responsive */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .main {
     width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding-top: 0.5rem;
   }
   header {
     display: none;
+  }
+  nav{
+    margin-bottom: 0;
   }
   .navbar.responsive {
     position: relative;
@@ -240,6 +270,13 @@ nav {
     display: block;
     float: none;
     width: 100%;
+  }
+  .navbar .search-container button{
+    display: none;
+  }
+  .navbar .search-container form{
+    border-radius: 0.5rem;
+    padding: 0;
   }
 }
 /* End of Header CSS */
