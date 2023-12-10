@@ -25,6 +25,7 @@ main{
 }
 .list_head .listHead_desc h3{
     font-family: 'Bitter';
+    margin-top: 0;
 }
 .list_head .listHead_form input[type="text"], .list_head .listHead_form input[type="date"] {
     font-family: 'Poppins';
