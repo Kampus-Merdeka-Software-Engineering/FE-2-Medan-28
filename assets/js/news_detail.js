@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://medan-28-backend.up.railway.app';
 
 var items = document.querySelectorAll(".items_related");
 

@@ -1,6 +1,5 @@
 // Fetch News from API - Move it to api specifically for APIs
-// const baseUrl = 'https://medan-28-backend.up.railway.app';
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://medan-28-backend.up.railway.app';
 
 // Fetch Carousel
 // ------------------------
