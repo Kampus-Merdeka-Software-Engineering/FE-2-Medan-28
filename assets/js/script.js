@@ -15,3 +15,9 @@ resNav.addEventListener("click", ()=>{
       y.className = "fa fa-bars"
     }
 });
+
+
+function redirectToSearch(newsCategory) {
+  // You can use window.location.href to redirect to the detail page
+  window.location.href = '/./src/search.html?kategori=' + newsCategory;
+}
