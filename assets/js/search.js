@@ -37,7 +37,7 @@ function renderDataToContent(articles){
         <div class="card_news">
             <div class="card_head">
               <a class="card_link" href="./news_detail.html?id=${article.id}"></a>
-              <img class="card_image" src=..${article.urlImage} alt="">
+              <img class="card_image" src="..${article.urlImage}" alt="">
           </div>
             <div class="card_content">
               <a href="./news_detail.html?id=${article.id}"><h3>${article.title}</h3></a>
