@@ -1,5 +1,4 @@
 const baseUrl = 'https://medan-28-backend.up.railway.app';
-const originUrl = window.location.origin;
 
 var items = document.querySelectorAll(".items_related");
 
@@ -43,7 +42,7 @@ function renderDetail(articles){
       content.innerHTML = `
               <div class="details_head">
                 <div class="news_image">
-                    <img src="${originUrl}${news.urlImage}">
+                    <img src="..${news.urlImage}">
                 </div>
                 <div class="news_description">
                     <h2>${news.title}</h2>
@@ -87,7 +86,7 @@ function renderOther (articles){
       list.innerHTML += `
       <div class="items_other">
         <div class="image_other">
-          <img src="${originUrl}${news.urlImage}">
+          <img src="..${news.urlImage}">
         </div>
         <div class="content_other">
           <h4><a class="items_link" href="./news_detail.html?id=${news.id}">${news.title}</a></h4>
@@ -115,7 +114,7 @@ function renderRelated  (articles){
       list.innerHTML += `
         <div class="items_related">
           <div class="image_related">
-            <img src="${originUrl}${news.urlImage}">
+            <img src="..${news.urlImage}">
           </div>
           <div class="content_related">
             <h4><a class="items_link" href="./news_detail.html?id=${news.id}">${news.title}</a></h4>

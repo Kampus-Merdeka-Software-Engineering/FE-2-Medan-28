@@ -1,7 +1,6 @@
 
 // Fetch News from API - Move it to api specifically for APIs
 const baseUrl = 'https://medan-28-backend.up.railway.app';
-const originUrl = window.location.origin;
 
 fetch(`${baseUrl}/articles`)
 .then(res => res.json())
@@ -73,7 +72,7 @@ function renderDataToContent(articles){
         <div class="card_news">
           <div class="card_head">
             <a class="card_link" href="./news_detail.html?id=${article.id}"></a>
-            <img class="card_image" src=${originUrl}${article.urlImage} alt="">
+            <img class="card_image" src="..${article.urlImage}" alt="">
         </div>
           <div class="card_content">
             <a href="./news_detail.html?id=${article.id}"><h3>${article.title}</h3></a>
@@ -115,7 +114,7 @@ function renderContentIndex(articles){
     <div class="card_news">
         <div class="card_head">
           <a class="card_link" href="./news_detail.html?id=${article.id}"></a>
-          <img class="card_image" src=${originUrl}${article.urlImage} alt="">
+          <img class="card_image" src="..${article.urlImage}" alt="">
       </div>
         <div class="card_content">
           <a href="./news_detail.html?id=${article.id}"><h3>${article.title}</h3></a>
