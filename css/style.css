@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("/./assets/images/bg.webp");
+  background-image: url("../assets/images/bg.webp");
   display: flex;
   flex-direction: column;
   min-height: 100vh;
