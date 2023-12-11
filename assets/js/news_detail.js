@@ -122,7 +122,7 @@ function renderRelated  (articles){
           </div>
         </div>
       `
-      detailsHead.innerHTML = `<a href="/">HOME</a> | <a onclick="redirectToSearchCategory('${news.category}')">${headCategory.toUpperCase()}</a>`
+      detailsHead.innerHTML = `<a href="../">HOME</a> | <a onclick="redirectToSearchCategory('${news.category}')">${headCategory.toUpperCase()}</a>`
     }
   }
 
