@@ -1,5 +1,7 @@
 const baseUrl = 'https://medan-28-backend.up.railway.app';
 const originUrl = window.location.origin;
+const testingUrl = location;
+console.log(testingUrl);
 
 var items = document.querySelectorAll(".items_related");
 
