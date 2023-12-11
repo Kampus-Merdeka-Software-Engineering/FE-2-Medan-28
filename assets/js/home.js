@@ -22,7 +22,7 @@ function renderCarousel(items){
     let date = dateFormat(item.createdAt);
     content.innerHTML+=`
         <div class="inews_carousel">
-          <a href="./src/news_detail.html?id=${item.id}"><img src="${originUrl}${item.urlImage}" alt="Inews"></a>
+          <a href="./src/news_detail.html?id=${item.id}"><img src="${testUrl}${item.urlImage}" alt="Inews"></a>
           <div class="inews_content">
               <h2><a href="./src/news_detail.html?id=${item.id}">${item.title}</a></h2>
               <blockquote><a href="./src/search.html?kategori=${item.category}">${item.category}</a></blockquote>
