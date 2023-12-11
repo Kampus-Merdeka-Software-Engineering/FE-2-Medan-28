@@ -1,8 +1,6 @@
 // Fetch News from API - Move it to api specifically for APIs
 const baseUrl = 'https://medan-28-backend.up.railway.app';
 const originUrl = window.location.origin;
-const testUrl = window.location.href;
-console.log("Testing url = " + testUrl);
 
 // Fetch Carousel
 // ------------------------
@@ -22,7 +20,7 @@ function renderCarousel(items){
     let date = dateFormat(item.createdAt);
     content.innerHTML+=`
         <div class="inews_carousel">
-          <a href="./src/news_detail.html?id=${item.id}"><img src="${testUrl}${item.urlImage}" alt="Inews"></a>
+          <a href="./src/news_detail.html?id=${item.id}"><img src="${originUrl}${item.urlImage}" alt="Inews"></a>
           <div class="inews_content">
               <h2><a href="./src/news_detail.html?id=${item.id}">${item.title}</a></h2>
               <blockquote><a href="./src/search.html?kategori=${item.category}">${item.category}</a></blockquote>
@@ -83,7 +81,7 @@ function renderBodyNews(articles){
       <div class="card_news">
           <div class="card_head">
             <a class="card_link" href="./src/news_detail.html?id=${article.id}"></a>
-            <img class="card_image" src=${testUrl}${article.urlImage} alt="">
+            <img class="card_image" src=${originUrl}${article.urlImage} alt="">
         </div>
           <div class="card_content">
             <a onclick="redirectToDetail(${article.id})"><h3>${article.title}</h3></a>
