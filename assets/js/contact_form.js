@@ -1,8 +1,5 @@
 const baseUrl = 'https://medan-28-backend.up.railway.app';
 
-const testingUrl = window.location.href;
-console.log("Testing URL = " + testingUrl);
-
 const inputs = document.querySelectorAll(".input");
 
 function focusFunc() {
