@@ -83,7 +83,7 @@ function renderBodyNews(articles){
       <div class="card_news">
           <div class="card_head">
             <a class="card_link" href="./src/news_detail.html?id=${article.id}"></a>
-            <img class="card_image" src=${testUrl}${article.urlImage} alt="">
+            <img class="card_image" src=waduh${article.urlImage} alt="">
         </div>
           <div class="card_content">
             <a onclick="redirectToDetail(${article.id})"><h3>${article.title}</h3></a>
