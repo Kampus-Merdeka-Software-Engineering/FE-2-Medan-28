@@ -2,7 +2,7 @@
 // Fetch News from API - Move it to api specifically for APIs
 const baseUrl = 'https://medan-28-backend.up.railway.app';
 // const originUrl = window.location.origin;
-const originUrl = window.location.href;
+const originUrl = location.href;
 
 
 fetch(`${baseUrl}/articles`)
