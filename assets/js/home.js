@@ -2,7 +2,7 @@
 const baseUrl = 'https://medan-28-backend.up.railway.app';
 const originUrl = window.location.origin;
 const testUrl = window.location.href;
-console.log(testUrl);
+console.log("Testing url = " + testUrl);
 
 // Fetch Carousel
 // ------------------------
