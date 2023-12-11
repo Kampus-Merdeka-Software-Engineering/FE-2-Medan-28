@@ -2,6 +2,8 @@
 // Fetch News from API - Move it to api specifically for APIs
 const baseUrl = 'https://medan-28-backend.up.railway.app';
 const originUrl = window.location.origin;
+const testingUrl = window.location.href;
+console.log("Testing URL = " + testingUrl);
 
 fetch(`${baseUrl}/articles`)
 .then(res => res.json())
