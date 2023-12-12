@@ -49,8 +49,8 @@ function postContactUs(event){
   .then(data => {
       form.reset();
       alert(data.message);
+      window.location.href = 'about.html';
   });
-
 }
 
 document.querySelector(".contact-form form")

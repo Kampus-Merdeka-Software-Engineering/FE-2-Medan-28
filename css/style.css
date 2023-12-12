@@ -11,6 +11,67 @@ body {
   margin: 0;
 }
 
+/* Loading Page */
+.loader_content {
+  text-align: center;
+}
+.loader_text{
+  font-family: 'Bitter';
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader_text span {
+  text-transform: uppercase;
+  margin-top: 1.2rem;
+  padding: 0 0.1rem;
+  font-size: 18px;
+  animation: zoomup 2s ease-in-out infinite;
+  display: inline-block;
+  animation-delay: calc(150ms * var(--i));
+  color: #ffb703;
+}
+.spinner{
+  border: 12px solid #007a8b;
+  border-radius: 50%;
+  border-top: 12px solid #ffde3d;
+  border-style:double;
+  width: 90px;
+  height: 90px;
+  animation: spin 1s linear infinite;
+}
+.center {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  justify-content:center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes zoomup {
+  /* 0%,
+  100% {
+    transform: scale(1);
+  } */
+
+  50% {
+    transform: translateY(-15px);
+    color: #007a8b;
+  }
+}
+
+
 /* Start of Header CSS */
 /* Header CSS */
 header {
@@ -20,6 +81,7 @@ header {
   left: 0;
   top: 0;
   margin: -2rem 0rem -2rem 0rem;
+  z-index: 10;
 }
 
 header .header-content {
@@ -304,6 +366,7 @@ footer {
   width: 100%;
   text-align: center;
   background: #007a8b;
+  z-index: 10;
 }
 
 footer .sub_footer {
